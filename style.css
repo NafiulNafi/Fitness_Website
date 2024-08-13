@@ -1,8 +1,8 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 .inter-normal {
     font-family: "Inter", sans-serif;
@@ -122,6 +122,10 @@ nav ul a ,footer ul a{
     color: rgb(255, 255, 255);
 
 }
+.menu{
+    display:none;
+   
+  }
 
 .home {
     background-color: rgb(230, 83, 60);
@@ -502,4 +506,8 @@ display: flex;
     rgba(255, 255, 255, 0.1);
     padding-top: 2.3rem;
     padding-bottom: 2.3rem;
+}
+
+.hide{
+    display: none;
 }
