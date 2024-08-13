@@ -13,9 +13,10 @@
 
 /* shared styles */
 
-.text-primary {
+.text-primary,.footer-fitness h2 {
 
     color: rgb(230, 83, 60);
+    
 
 }
 
@@ -55,7 +56,8 @@
 .bmi-title p,
 .bmi-calculate p,
 .team-title p ,
-.member-info span{
+.member-info span,
+.app-info p{
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
 }
@@ -115,7 +117,7 @@ nav ul {
 
 }
 
-nav ul a {
+nav ul a ,footer ul a{
     text-decoration: none;
     color: rgb(255, 255, 255);
 
@@ -396,7 +398,108 @@ th {
     bottom: 4.5rem;
     left: 1.5rem;
 }
-.member-info h5{
+.member-info h5,.app-info h3 {
     font-weight: 900;
     font-size: 1.2rem;
+}
+
+/* unique section */
+.app{
+    background-color:rgb(15, 14, 36);
+}
+.app-info p{
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.app-container{
+    margin: 5rem;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+}
+.app-img img{
+    width: 100%;
+ 
+}
+.app-img:hover{
+    transition:transform 7s;
+    transform: scale(0.7) rotate(360deg);
+}
+.app-icon img{
+    width: 30px;
+    
+    margin:10px auto;
+    
+display: flex;
+}
+.app-icon button{
+    border-radius: 1rem;
+    padding: 10px;
+ 
+}
+.app-icon a{
+    
+   margin: 20px;
+
+ 
+}
+.store{
+    font-weight: 900;
+    color:navy;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+.store:hover{
+    background-color:grey;
+    transform: scale(1.5);
+}
+
+/* footer */
+.footer{
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0;
+}
+.footer-list{
+   list-style: none;
+   display: grid;
+   gap: 1rem;
+  
+}
+.footer-list a{
+    color: rgba(255, 255, 255, 0.5);
+   
+}
+
+.footer-fitness h2{
+    font-size: 4.5rem; ;
+    font-weight:800 ;
+
+}
+.footer-contents{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 70px 190px;
+    gap: 20px;
+
+}
+.footer-fitness p{
+    text-align: left;
+}
+.footer-title{
+    text-align: right;
+}
+.footer-title h5{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    
+}
+
+.copyright{
+    border-top: 1.5px solid
+    rgba(255, 255, 255, 0.1);
+    padding-top: 2.3rem;
+    padding-bottom: 2.3rem;
 }
