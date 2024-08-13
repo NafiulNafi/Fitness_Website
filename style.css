@@ -41,8 +41,21 @@
 
 }
 
+.grey {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.grey option {
+    background-color: white;
+    color: grey;
+}
+
 .light,
-.habit-cards p {
+.habit-cards p,
+.bmi-title p,
+.bmi-calculate p,
+.team-title p ,
+.member-info span{
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
 }
@@ -76,11 +89,10 @@ body {
 
 nav {
     display: flex;
-    /* max-width: 1060px; */
+
     justify-content: space-between;
     align-items: center;
-    /* margin: 57px auto; */
-    /* width: 66.25rem; */
+
 
 }
 
@@ -188,7 +200,8 @@ nav ul a {
     gap: 1rem;
 }
 
-.habit-title h3 {
+.habit-title h3,
+.bmi-title h3 {
     font-weight: 900;
     font-size: 3rem;
 }
@@ -217,7 +230,8 @@ p {
 }
 
 /* extra section */
-.extra {
+.extra,
+.bmi-bg {
     border-radius: 1.1rem;
     background-color: rgb(34, 34, 34);
 }
@@ -256,4 +270,133 @@ p {
     margin-right: 2rem;
     border-radius: 1.1rem;
 
+}
+
+/* bmi section */
+.bmi-items {
+    justify-content: space-between;
+
+    margin: 50px 190px;
+
+}
+
+.bmi-title {
+    text-align: center;
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+}
+
+
+.bmi-chart h3,
+.bmi-calculate h3 {
+    font-weight: 900;
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+
+}
+
+.bmi-chart {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.bmi-calculate {
+    margin-top: 50px;
+}
+
+.bmi-chart td,
+th {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem 1rem;
+}
+
+.bmi-bg {
+
+    margin: 0;
+}
+
+.calc-description {
+    position: relative;
+    bottom: 2rem;
+}
+
+
+
+.form-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2rem;
+}
+
+
+.form input,
+.form select {
+    padding: 0.6rem;
+    font-size: 1rem;
+
+    border-radius: .2rem;
+    border: none;
+
+    opacity: 0.9;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bmi-calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 1.6rem;
+    padding: 1.5rem;
+
+}
+
+/* team section */
+
+#meet{
+    font-weight: 900;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+.team-title h3,p{
+    text-align: center;
+}
+.team-title p{
+    margin-top: 1rem;
+    margin-bottom: 4.5rem;
+}
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 190px;
+    margin-right: 190px;
+    background: rgba(255, 255, 255, 0.1);
+  
+
+   column-gap: 1.5rem;
+   row-gap: 1rem;
+   padding: 2.5rem 1rem;
+   border-radius: 1rem;
+   padding-bottom: 0rem;
+  
+}
+
+.member img {
+    width: 100%;
+    height: 17rem;
+    border-radius: 1rem;
+   
+}
+
+.member-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+    bottom: 4.5rem;
+    left: 1.5rem;
+}
+.member-info h5{
+    font-weight: 900;
+    font-size: 1.2rem;
 }
